@@ -1,0 +1,9 @@
+mixin nav(url, cn, en, className)
+    a(href="#", title=en, class=className)
+        .cn!= cn
+        .en!= en
+
+mixin icon(url, iconPath, text)
+    a(href="http://"+url, title=text, target="_blank")
+        img(src='./img/icon/'+iconPath,alt=text)
+

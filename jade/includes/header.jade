@@ -1,0 +1,15 @@
+include ./_mixins.jade
+
+header
+    block header
+        .logo
+            a(href="./index.html",title="home")
+                img(src="./img/logo.jpg",alt="新建筑")
+
+        ul.nav
+            li
+                mixin nav('./about.html','关于','ABOUT','nav-item')
+            li
+                mixin nav('./info.html','信息','INFO','nav-item')
+            li 
+                mixin nav('./tutors.html','导师','TUTORS','nav-item')

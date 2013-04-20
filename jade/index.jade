@@ -1,0 +1,64 @@
+// the index page
+extends ./includes/_default
+
+append declare
+    SiteTitle = '主页';
+    SiteName = 'index';
+
+prepend scripts
+    script.
+        window.pageinfo = {
+            name: '#{SiteName}'  
+        };
+
+append content
+    .slider
+        .sliderBorder
+        .sliderMain
+            div#prev.prev <
+            div#exhibition.intro
+                .introTitle
+                    h2.en Dada 
+                    h2.cn 展览
+                p Member of Horhizon ParisJaenes Bong graduated from Ecole Spéciale d’Architecture in Paris. His final thesis represented first French architecture academy in RIBA president medal, shortlisted in the 16 finalists and awarded for 2nd best thesis project at ESA in 2009. Through his career, he worked in the Kengo Kuma Associates Europe and Odile Decq in Paris co-leading several prominent competitions such as EDF headquarter in Saclay and MNAST de Rabat (2nd prize), meanwhile in academic, he worked as tutor assistant under Kinugasa Tsui-Lau (Horhizon London), Paolo Cascone (Ocean, COdesignLab Paris) and currently co-tutoring at Chinese University of Hong Kong. 
+            div#reception.intro
+                .introTitle
+                    h2.en NEW ARCHITECTURE
+                    h2.cn 30周年招待会
+                p Member of Horhizon ParisJaenes Bong graduated from Ecole Spéciale d’Architecture in Paris. His final thesis represented first French architecture academy in RIBA president medal, shortlisted in the 16 finalists and awarded for 2nd best thesis project at ESA in 2009. Through his career, he worked in the Kengo Kuma Associates Europe and Odile Decq in Paris co-leading several prominent competitions such as EDF headquarter in Saclay and MNAST de Rabat (2nd prize), meanwhile in academic, he worked as tutor assistant under Kinugasa Tsui-Lau (Horhizon London), Paolo Cascone (Ocean, COdesignLab Paris) and currently co-tutoring at Chinese University of Hong Kong.
+            div#trainingCamp.intro
+                .introTitle
+                    h2.en Digital Age
+                    h2.cn 工作营
+                p Member of Horhizon ParisJaenes Bong graduated from Ecole Spéciale d’Architecture in Paris. His final thesis represented first French architecture academy in RIBA president medal, shortlisted in the 16 finalists and awarded for 2nd best thesis project at ESA in 2009. Through his career, he worked in the Kengo Kuma Associates Europe and Odile Decq in Paris co-leading several prominent competitions such as EDF headquarter in Saclay and MNAST de Rabat (2nd prize), meanwhile in academic, he worked as tutor assistant under Kinugasa Tsui-Lau (Horhizon London), Paolo Cascone (Ocean, COdesignLab Paris) and currently co-tutoring at Chinese University of Hong Kong.
+            div#next.next >
+        .sliderBorder
+
+    .associateSchools
+        div
+            ul
+                li
+                    mixin icon("www.tsinghua.edu.cn","Tsinghua_Logo.png","清华大学")
+                li
+                    mixin icon("www.hust.edu.cn","hust_logo.png","华中科技大学")
+                li
+                    mixin icon("www.hustwenhua.net/jgsz/xsgzc/jyxxw/zpxx/201211/22786.html","huakeyoujian_logo.jpg","华科优建(武汉)工程信息发展有限公司")
+                li
+                    mixin icon("www.wh.k11concepts.com","k11.jpg","K11")
+        div
+            ul
+                li
+                    mixin icon("www.cuhk.edu.hk","cuhk_logo.gif","香港中文大学")
+                li
+                    mixin icon("www.hku.hk","HKU_logo.jpg","香港大学")
+                li
+                    mixin icon("www.scut.edu.cn","huananligong_logo.jpg","华南理工大学")
+
+    .otherLinks
+        ul
+            li
+                mixin icon("#","sina_logo.gif","新浪微博")
+            li
+                mixin icon("#","renren_logo.jpg","人人")
+            li
+                mixin icon("#","qq_logo.jpg","QQ")

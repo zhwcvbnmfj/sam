@@ -1,0 +1,190 @@
+/* @group general styles
+----------------------------------------------------*/
+body, h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #f00;
+    float: left;
+    font-size: 2em;
+}
+li {
+    float: left;
+    list-style-type: none;
+    display: inline-block;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+/* @group helper styles
+----------------------------------------------------*/
+
+/* @group page structure
+----------------------------------------------------*/
+/* ---------- header ------------ */
+header {
+    height: 20%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.logo {
+    display: inline-block;
+}
+.logo img{
+    height: 100%;
+    margin-left: 5%;
+    display:block;
+}
+
+ul.nav {
+    display: inline-block;
+    margin-left: 15%;
+    width: 60%;
+}
+ul.nav li {
+    padding-right: 10%;
+}
+ul.nav div.cn {
+    color: #f00;
+    font: 1.2em "微軟正黑體";
+    position: relative;
+    top: 0.25em;
+}
+ul.nav div.en {
+    color: #f00;
+    font: 1.2em "MS Reference Sans Serif";
+}
+/* ---------- content ------------ */
+.content {
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+/* slider */
+.slider {
+    height: 70%;
+    width: 100%;
+}
+.sliderMain {
+    background-image: url('../img/back.jpg');
+    background-size: 100% 100%;
+    height: 96%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.sliderMain div {
+    display: inline-block;
+}
+
+.intro {
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    filter:progid:DXImageTransform.Microsoft.gradient(enabled=’true’,startColorstr=’#7F000000′, endColorstr=’#7F000000′);
+    background: rgba(255,255,255,0.5);/*#fff;*/
+    /*opacity: 0.5;*/
+    visibility: hidden;
+}
+
+.intro p {
+    float: left;
+    font: 1em "MS Reference Sans Serif";
+    margin: 1em 0 0 1em;
+}
+.introTitle {
+    margin: 2.5em 1em 0 0.2em;
+}
+.intro h2.en {
+    font-family: "Charlemagne Std";
+    margin-right: 0.5em;
+}
+.intro h2.cn {
+    font-family: "標楷體";/*"Adobe 黑体 Std";*/
+}
+
+.prev, .next {
+    font: bold 3em sans-serif;
+    color: #f00;
+    position: relative;
+    top: 45%;
+    cursor: pointer;
+}
+.prev {
+    float: left;
+    margin-left: 1.5%;
+}
+.next {
+    float: right;
+    margin-right: 1.5%;
+}
+.prev:hover, .next:hover {
+    background-color: #fff;
+    opacity: 0.5;
+}
+.sliderBorder {
+    background-color: #f00;
+    height: 2%;
+    width: 100%;
+}
+
+/* icons */
+.content ul {
+    margin: 1% 0 0 2%;
+    width: 100%;
+}
+.associateSchools {
+    width: 50%;
+    display: inline-block;
+    padding: 0.5% 0 0 2%;
+    float: left;
+}
+.associateSchools li {
+    padding-right: 5%;
+}
+
+.associateSchools img {
+    height: 8%;
+    display: block;
+}
+
+.otherLinks {
+    width: 20%;
+    display: inline-block;
+    float: right;
+    margin: 1% 15% 0 0;
+}
+.otherLinks li {
+    float: right;
+    margin-left: 5%;
+}
+.otherLinks img {
+    height: 7%;
+    display: block;
+}
+/* ---------- footer ------------ */
+footer {
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    color: #f00;
+}
+/* @group page components
+----------------------------------------------------*/
+
+/* @group overrides
+----------------------------------------------------*/

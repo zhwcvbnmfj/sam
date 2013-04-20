@@ -1,0 +1,12 @@
+include ./_declare
+head
+    block head
+        meta(http-equiv="Content-Type",content="text/html;charset=UTF-8")
+        meta(charset="UTF-8")
+
+        if(SiteTitle)
+            title 新建筑-#{SiteTitle}
+        else
+            title 新建筑
+
+        include ./styles
