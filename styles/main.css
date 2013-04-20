@@ -101,6 +101,10 @@ ul.nav div.en {
     visibility: hidden;
 }
 
+div#exhibition {
+    visibility: visible;
+}
+
 .intro p {
     float: left;
     font: 1em "MS Reference Sans Serif";
